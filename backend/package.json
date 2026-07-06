@@ -1,0 +1,17 @@
+{
+  "name": "sam-backend",
+  "version": "0.1.0",
+  "description": "Backend do SAM - Sistema de Apoio ao Meu Pet",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
+  }
+}

@@ -1,0 +1,16 @@
+-- SAM - Sistema de Apoio ao Meu Pet
+-- Schema do banco de dados (MySQL)
+--
+-- Este arquivo será preenchido conforme a modelagem de dados
+-- (DER -> modelo lógico -> modelo físico) for finalizada.
+--
+-- Estrutura prevista (baseada no MVP Must Have):
+--   - tutores
+--   - pets
+--   - vacinas
+--   - eventos_calendario
+--   - memorias
+--
+-- CREATE TABLE tutores (...);
+-- CREATE TABLE pets (...);
+-- CREATE TABLE vacinas (...);
