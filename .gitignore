@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente (nunca versionar credenciais)
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / SO
+.vscode/
+.cursor/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Banco de dados local (se usarem dump ou arquivo local)
+*.sql.bak
