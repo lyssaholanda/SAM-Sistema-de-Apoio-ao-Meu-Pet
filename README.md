@@ -137,6 +137,47 @@ npm install
 npm run dev
 ```
 
+```
+
+### 3. Configurar e rodar o backend
+
+```bash
+cd backend
+npm install
+```
+
+Crie um arquivo `.env` na pasta `backend` com as credenciais do banco:
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=sua_senha
+DB_NAME=sam_db
+PORT=3001
+```
+
+```bash
+npm run dev
+```
+
+### 4. Configurar e rodar o frontend
+
+Se ainda não inicializado nesta pasta:
+
+```bash
+cd frontend
+npm create vite@latest . -- --template react-ts
+npm install
+```
+
+Se já inicializado:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
 O frontend deve ficar disponível em `http://localhost:5173` (ou porta configurada pelo Vite), consumindo a API do backend em `http://localhost:3001`.
 
 Bibliotecas a avaliar conforme o projeto avançar: `react-router-dom` (rotas), `axios` (requisições HTTP), `tailwindcss` (estilização mobile-first).
@@ -157,6 +198,15 @@ Projeto desenvolvido em dupla como parte da graduação em Engenharia de Softwar
 
 - **Mallyssa Holanda** — [GitHub](#) 
 - **Lorena Thevenard** — [GitHub](#)
+
+## 🤖 Desenvolvimento Guiado por Especificações (SDD)
+
+Este projeto adota a metodologia **Spec-Driven Development (SDD)** para o desenvolvimento assistido por Inteligência Artificial. Para entender o fluxo de engenharia, regras de negócio e o progresso das tarefas, consulte os arquivos de especificação na raiz do projeto:
+
+- `requirements.md` — Escopo detalhado e regras de negócio do MVP.
+- `design.md` — Decisões de arquitetura, stack técnica e padronização do código/banco em inglês.
+- `tasks.md` — Lista linear de execução das tarefas do projeto.
+- `CLAUDE.md` — Diretrizes de comportamento para agentes de IA.
 
 ## 📄 Licença
 
