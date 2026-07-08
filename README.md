@@ -158,6 +158,15 @@ Projeto desenvolvido em dupla como parte da graduação em Engenharia de Softwar
 - **Mallyssa Holanda** — [GitHub](#) 
 - **Lorena Thevenard** — [GitHub](#)
 
+## 🤖 Desenvolvimento Guiado por Especificações (SDD)
+
+Este projeto adota a metodologia **Spec-Driven Development (SDD)** para o desenvolvimento assistido por Inteligência Artificial. Para entender o fluxo de engenharia, regras de negócio e o progresso das tarefas, consulte os arquivos de especificação na raiz do projeto:
+
+- `requirements.md` — Escopo detalhado e regras de negócio do MVP.
+- `design.md` — Decisões de arquitetura, stack técnica e padronização do código/banco em inglês.
+- `tasks.md` — Lista linear de execução das tarefas do projeto.
+- `CLAUDE.md` — Diretrizes de comportamento para agentes de IA.
+
 ## 📄 Licença
 
 *A definir.*
