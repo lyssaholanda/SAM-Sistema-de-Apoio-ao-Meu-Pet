@@ -1,3 +1,16 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente (nunca versionar credenciais)
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+dist-ssr/
+build/
+
 # Logs
 logs
 *.log
@@ -7,18 +20,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor / SO
 .vscode/*
 !.vscode/extensions.json
+.cursor/
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Diversos
+*.local
+*.sql.bak
