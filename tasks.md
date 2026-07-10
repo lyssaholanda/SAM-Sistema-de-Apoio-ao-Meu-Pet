@@ -8,10 +8,10 @@
 
 ## Fase 1: Modelagem e Estruturação do Banco
 
-- [ ] Task 1: Criar o arquivo `backend/database/schema.sql` com as queries DDL (`CREATE TABLE`) manuais para todas as entidades, baseado no `design.md`.
-- [ ] Task 1b: Popular a tabela `event_type` com os valores iniciais (seed) via `INSERT`, conforme tabela de mapeamento do `design.md` (Consultation, Medication, Vaccine, Grooming, Exam, Other). Sem isso, não é possível criar nenhum `event` depois, pois `event.event_type_id` depende de registros já existentes.
-- [ ] Task 2: Rodar o `schema.sql` no MySQL (`sam_db`) e confirmar que todas as tabelas foram criadas sem erro.
-- [ ] Task 3: Configurar/confirmar a conexão do Node.js com o MySQL usando `mysql2`, lendo variáveis do `.env`. *(Base já existe em `backend/src/db/pool.js` — validar que funciona contra as tabelas reais.)*
+- [X] Task 1: Criar o arquivo `backend/database/schema.sql` com as queries DDL (`CREATE TABLE`) manuais para todas as entidades, baseado no `design.md`.
+- [X] Task 1b: Popular a tabela `event_type` com os valores iniciais (seed) via `INSERT`, conforme tabela de mapeamento do `design.md` (Consultation, Medication, Vaccine, Grooming, Exam, Other). Sem isso, não é possível criar nenhum `event` depois, pois `event.event_type_id` depende de registros já existentes.
+- [X] Task 2: Rodar o `schema.sql` no MySQL (`sam_db`) e confirmar que todas as tabelas foram criadas sem erro.
+- [X] Task 3: Configurar/confirmar a conexão do Node.js com o MySQL usando `mysql2`, lendo variáveis do `.env`. *(Base já existe em `backend/src/db/pool.js` — validar que funciona contra as tabelas reais.)*
 
 ## Fase 2: Autenticação (depende da Fase 1 + Task 0)
 
