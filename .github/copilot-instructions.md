@@ -1,6 +1,11 @@
 # SAM — Sistema de Apoio ao Meu Pet | Guia para IA
 
+> ⚠️ **INSTRUÇÃO OBRIGATÓRIA PARA A IA:**
+> Antes de responder ou gerar qualquer código para uma tarefa:
+> 1. Leia atentamente este arquivo (`.github/copilot-instructions.md`) para seguir todas as convenções (SQL manual, nomes em inglês, etc.).
+> 2. Consulte obrigatoriamente os arquivos na pasta `docs/` (`docs/tasks.md`, `docs/requirements.md` e `docs/design.md`) para entender os requisitos e o contexto da tarefa solicitada.
 ## 📋 Visão Geral do Projeto
+
 
 **SAM** é um aplicativo mobile-first que ajuda tutores de pets a organizarem saúde, rotina e memórias afetivas de seus pets em um único lugar. Suporta múltiplos pets por conta, com funcionalidades de carteira de vacinação, calendário de cuidados e linha do tempo de memórias.
 
@@ -129,8 +134,6 @@ npm run dev  # roda em http://localhost:5173
 Frontend consome API em `http://localhost:3001`.
 
 ## 📚 Documentação Relacionada
+- `docs` - Documentação detalhada do projeto (esta pasta contém: design.md, requirements.md, tasks.md)
 
-- `design.md` — Decisões de arquitetura, stack, padronização detalhada
-- `requirements.md` — Escopo MoSCoW, priorização, estado atual
-- `tasks.md` — Lista linear de execução com dependências
 - `README.md` — Visão geral do projeto, features planejadas, instruções de setup
