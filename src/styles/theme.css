@@ -1,0 +1,122 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #f8f5f0;
+  --foreground: #1f1f1f;
+  --card: #ffffff;
+  --card-foreground: #1f1f1f;
+  --popover: #ffffff;
+  --popover-foreground: #1f1f1f;
+  --primary: #c98a4a;
+  --primary-foreground: #ffffff;
+  --secondary: #e8dfcf;
+  --secondary-foreground: #1f1f1f;
+  --muted: #e8dfcf;
+  --muted-foreground: #6e6e6e;
+  --accent: #e4a95a;
+  --accent-foreground: #1f1f1f;
+  --destructive: #c94a4a;
+  --destructive-foreground: #ffffff;
+  --border: rgba(31, 31, 31, 0.1);
+  --input: transparent;
+  --input-background: #ffffff;
+  --switch-background: #d4c9b8;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --ring: #c98a4a;
+  --chart-1: #c98a4a;
+  --chart-2: #e4a95a;
+  --chart-3: #7aaf8c;
+  --chart-4: #8ba8c4;
+  --chart-5: #b07dc8;
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', 'DM Sans', sans-serif;
+    margin: 0;
+    min-height: 100svh;
+    overflow-x: hidden;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  #root {
+    min-height: 100svh;
+  }
+
+  button {
+    @apply cursor-pointer transition-colors duration-200;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  input,
+  textarea,
+  select {
+    min-width: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span,
+  label {
+    line-height: 1.35;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
