@@ -1,0 +1,18 @@
+export const ROUTES = {
+  splash: '/',
+  login: '/login',
+  register: '/cadastro',
+  onboarding: '/onboarding',
+  addPet: '/pets/novo',
+  dashboard: '/dashboard',
+  multiPet: '/pets',
+  petProfile: '/pets/perfil',
+  vaccines: '/vacinas',
+  addVaccine: '/vacinas/nova',
+  calendar: '/calendario',
+  addEvent: '/calendario/novo-evento',
+  alerts: '/alertas',
+  memories: '/memorias',
+  addMemory: '/memorias/nova',
+  tutorProfile: '/tutor/perfil',
+} as const
